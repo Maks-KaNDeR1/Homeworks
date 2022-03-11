@@ -1,0 +1,25 @@
+import React from 'react'
+import { AffairType } from './HW2'
+import s from './Affairs.module.css'
+
+
+type AffairPropsType = {
+    affair: AffairType 
+    deleteAffairCallback: (_id: number) => void 
+}
+
+function Affair(props: AffairPropsType) {
+    const deleteCallback = () => {
+         props.deleteAffairCallback(props.affair._id)
+    } 
+    
+    return (
+        <div className={s.items}  >
+            <span>{props.affair.name}</span>
+            <span>{props.affair.priority}</span>
+            <button style={{ backgroundColor: 'rgba(148, 168, 35, 0.918)'}} onClick={deleteCallback}>X</button>
+        </div>
+    )
+}
+
+export default Affair

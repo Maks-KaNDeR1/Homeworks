@@ -1,0 +1,13 @@
+
+.item {
+    height: 40px;
+}
+
+.span {
+    display: inline-block;
+
+    height: 31px;
+    padding: 10px;
+    cursor: pointer;
+
+}

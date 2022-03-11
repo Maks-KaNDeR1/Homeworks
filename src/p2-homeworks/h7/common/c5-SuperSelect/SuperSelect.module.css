@@ -1,0 +1,10 @@
+
+.select {
+    width: 100px;
+    padding: 3px;
+    padding-right: 30px;
+
+    cursor: pointer;
+    background-color: rgba(119, 140, 148, 0.452)
+
+}
