@@ -1,5 +1,4 @@
 
-export type initStateType = typeof initState
 
 const initState = {
    loading: false
@@ -7,12 +6,12 @@ const initState = {
 
 
 
-export const loadingReducer = (state = initState, action: loadingACType): initStateType => { // fix any
+export const loadingReducer = (state = initState, action: loadingACType): typeof initState => { // fix any
     switch (action.type) {
         case 'SET_LOADING': {
             return {
                 ...state, 
-                loading: true
+                loading: action.loading
             }
         }
         default: return state

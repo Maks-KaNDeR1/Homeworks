@@ -8,6 +8,7 @@ type MessagePropsType = {
     message: string
     time: string
 }
+
 function Message(props: MessagePropsType) {
     return (
         <div className={s.message}>
