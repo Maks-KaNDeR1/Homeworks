@@ -1,0 +1,25 @@
+
+.items {
+  display: flex;
+
+  justify-content: space-between;
+  width: 300px;
+  margin-left: 15px;
+}
+.item{
+  color: rgba(52, 85, 88, 0.822);
+    
+  text-decoration: none;
+}
+  
+.active  {
+  color: rgba(65, 158, 80, 0.835);
+
+  text-decoration: none;
+}
+
+  
+.item:hover {
+  transform: scale(1.04);
+  
+}

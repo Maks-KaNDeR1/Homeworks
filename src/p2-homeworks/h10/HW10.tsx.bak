@@ -6,7 +6,7 @@ import { AppStoreType } from './bll/store';
 
 function HW10() {
     // useSelector, useDispatch
-    const loading = useSelector<AppStoreType, boolean>(state => state.loading.loading)
+    const loading = useSelector<AppStoreType, boolean>(state => state.loading)
     const dispatch = useDispatch()
 
 
@@ -17,6 +17,10 @@ function HW10() {
         }, 2000)
     };
 
+    // debugger
+    console.log(loading)
+
+
     return (
         <div>
             <hr />
@@ -24,7 +28,7 @@ function HW10() {
 
             {/*should work (должно работать)*/}
 
-            {loading ? <div>крутилка...</div>
+            {!loading ? <div>крутилка...</div>
             : (
                     <div>
                         <SuperButton onClick={setLoading}>set loading...</SuperButton>

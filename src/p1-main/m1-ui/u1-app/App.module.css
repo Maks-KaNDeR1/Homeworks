@@ -2,6 +2,10 @@
     background-color: rgba(163, 255, 255, 0.301);
 }
 
+.App h2 {
+   margin-top: 0px;
+}
+
 .hw {
     margin-left: 10px;
 

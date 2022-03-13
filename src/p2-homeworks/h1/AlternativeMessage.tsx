@@ -3,6 +3,7 @@ import React, { ChangeEvent, KeyboardEvent, useState } from 'react'
 
 type PropsType = {
     addMessage: (title: string) => void
+    scroll: any
 }
 
 function AlternativeMessage(props: PropsType) {
@@ -16,6 +17,9 @@ function AlternativeMessage(props: PropsType) {
     const onMessageClick = () => {
         props.addMessage(title)
         setTitle('')
+        setTimeout(() => {
+            props.scroll.current.scrollIntoView({ behavior: 'smooth' })
+        }, 0)
     }
 
     const onKeyPressHandler = (e: KeyboardEvent<HTMLInputElement>) => {
@@ -25,6 +29,7 @@ function AlternativeMessage(props: PropsType) {
     }
 
     return (
+        
         <div>
             <input style={{
                 marginLeft: '30px',
@@ -34,7 +39,9 @@ function AlternativeMessage(props: PropsType) {
                 onChange={hendleOnChange}
                 onKeyPress={onKeyPressHandler}
             />
-            <button style={{
+            <button
+            
+            style={{
                 borderRadius: '0px 55px 55px 0',
                 backgroundColor: 'rgba(79, 140, 148, 0.452)'
             }}
