@@ -1,5 +1,7 @@
 import React, { MouseEvent, useState } from 'react'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
+import s from './Clock.module.css'
+
 
 function Clock() {
     const [timerId, setTimerId] = useState<number>(0)
@@ -24,20 +26,25 @@ function Clock() {
         setShow(false)
     }
 
-    const stringTime = date?.toLocaleTimeString() || <br/> // fix with date
+    const stringTime = date?.toLocaleTimeString() || '0:00:00' // fix with date
     const stringDate = date?.toLocaleDateString() 
 
+
+
     return (
-        <div>
-            <div style={{width: '10px'}}
+        <div className={s.clock} >
+            <div style={{width: '20px' }}
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
             >
+                <div >
                 {stringTime}
-            </div>
+
+                </div>
+            </div >
 
             {show ? (
-                <div>
+                <div >
                     {stringDate}
                 </div>
             ) : <br/> }

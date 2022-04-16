@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { v1 } from 'uuid'
 import AlternativeMessage from './AlternativeMessage'
+import homeworks from './homeworks'
 import Message from './Message'
 import s from './Message.module.css'
 
@@ -76,11 +77,14 @@ function HW1() {
 
     const time = () => {
 
-        const d = new Date()
-        const m = d.getMinutes()
-        const h = d.getHours()
-
-        return <>{h}:{m}</>
+        let d = new Date()
+        let m = d.getMinutes()
+        let h = d.getHours()
+		
+        let hour = h < 10 ? '0' + h : h
+        let min = m < 10 ? '0' + m : m
+	
+        return <>{hour}:{min}</>
     }
 
     const messageElements = dialog.map(m =>
@@ -93,10 +97,10 @@ function HW1() {
 
 
     return (
-        <div >
+        <div style={{ width: '800px'}} >
             <hr />
-            homeworks 1
-            <div style={{ overflow: 'auto', height: '400px' }} >
+            {homeworks(1)}
+            <div style={{ overflow: 'auto', height: '600px' }} >
                 {messageElements}
                 <div ref={scroll} ></div>
             </div>

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import SuperEditableSpan from './common/c4-SuperEditableSpan/SuperEditableSpan'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import { restoreState, saveState } from './localStorage/localStorage'
+import homeworks from '../h1/homeworks'
 
 function HW6() {
     const [value, setValue] = useState<string>('')
@@ -16,7 +17,7 @@ function HW6() {
     return (
         <div>
             <hr />
-            homeworks 6
+            {homeworks(6)}
 
             {/*should work (должно работать)*/}
             <div style={{ marginLeft: '14px' }}>

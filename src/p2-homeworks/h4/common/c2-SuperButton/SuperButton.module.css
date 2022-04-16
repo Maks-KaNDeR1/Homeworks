@@ -1,8 +1,15 @@
 .default {
-    background-color: rgba(98, 98, 74, 0.445)
+    /* background-color: rgba(98, 98, 74, 0.445); */
+    background-color: rgba(75, 74, 98, 0.637);
+    color:rgb(34, 235, 235);
 }
 
 .red {
     background: red;
 }
 
+ 
+.default:hover {
+  transform: scale(1.04);
+  
+}

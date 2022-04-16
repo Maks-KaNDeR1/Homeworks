@@ -1,4 +1,5 @@
 import React from "react";
+import homeworks from "../h1/homeworks";
 import s from "./HW12.module.css";
 
 const themes = ['dark', 'red', 'some'];
@@ -12,7 +13,8 @@ function HW12() {
         <div className={s[theme]}>
             <hr/>
             <span className={s[theme + '-text']}>
-                homeworks 12
+            {homeworks(12)}
+
             </span>
 
             {/*should work (должно работать)*/}

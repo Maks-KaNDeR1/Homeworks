@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { v1 } from 'uuid'
+import homeworks from '../h1/homeworks'
 import GreetingContainer from './GreetingContainer'
 
 // types
@@ -23,7 +24,7 @@ function HW3() {
     return (
         <div>
             <hr/>
-            homeworks 3
+            {homeworks(3)}
 
             {/*should work (должно работать)*/}
             <GreetingContainer users={users} addUserCallback={addUserCallback}/>

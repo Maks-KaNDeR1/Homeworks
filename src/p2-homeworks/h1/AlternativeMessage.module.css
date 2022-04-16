@@ -1,18 +1,9 @@
-.someClass {
-
-}
-
-.error {
-    border: 1px solid red;
-}
-
-
 
 .items input {
-    margin-left: 20px;
+    margin-left: 30px;
     background-color: rgba(119, 140, 148, 0.452);
 }
-				
+
 .items button {
     border-radius: 0px 55px 55px 0;
     background-color: rgba(79, 140, 148, 0.452)

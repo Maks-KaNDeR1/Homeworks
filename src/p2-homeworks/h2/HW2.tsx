@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import homeworks from '../h1/homeworks'
 import Affairs from './Affairs'
 
 export type AffairPriorityType = 'high' | 'low' | 'middle' 
@@ -43,7 +44,7 @@ function HW2() {
     return (
         <div>
             <hr/>
-            homeworks 2
+            {homeworks(2)}
 
             <Affairs
                 data={filteredAffairs}

@@ -7,6 +7,11 @@ function Header() {
 
     return (
         <div className={s.items} >
+              <div className={s.item}>
+                <NavLink to='/dialog'
+                    className={({ isActive }) => (isActive ? s.active : s.item)}
+                > Dialog </NavLink>
+            </div>
             <div className={s.item}>
                 <NavLink to='/pre-junior'
                     className={({ isActive }) => (isActive ? s.active : s.item)}

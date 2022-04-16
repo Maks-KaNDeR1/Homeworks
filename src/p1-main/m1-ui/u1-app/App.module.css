@@ -1,9 +1,18 @@
 .App {
-    background-color: rgba(163, 255, 255, 0.301);
+    background-image:url(https://img.freepik.com/free-photo/vintage-grunge-blue-concrete-texture-studio-wall-background-with-vignette_1258-28513.jpg?w=900&t=st=1650102299~exp=1650102899~hmac=67e731e0a15e3654c06bca7d2b2d9c49cef16918ec4c60c81be53fca32ef66fa)   ;
+    height: 800px;
+    max-width: 900px;
+    /* background-color: rgba(163, 255, 255, 0.301); */
 }
 
+/*
+
+<a href="http://desktopwallpapers.org.ua/textures/17193-perekryostki-temno-tekstura-fon-linii-izgiby.html"><img 
+src="http://desktopwallpapers.org.ua/mini/201206/17193.jpg" </a>
+*/
 .App h2 {
    margin-top: 0px;
+   color: rgb(97, 11, 158);
 }
 
 .hw {

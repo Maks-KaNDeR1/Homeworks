@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import homeworks from '../h1/homeworks'
 import SuperSelect from './common/c5-SuperSelect/SuperSelect'
 import SuperRadio from './common/c6-SuperRadio/SuperRadio'
 
@@ -12,7 +13,7 @@ function HW7() {
     return (
         <div>
             <hr/>
-            homeworks 7
+            {homeworks(7)}
 
             {/*should work (должно работать)*/}
             <div style={{ marginLeft: '14px'}}>

@@ -3,18 +3,21 @@
   display: flex;
 
   justify-content: space-between;
-  width: 300px;
+  width: 500px;
   margin-left: 15px;
 }
 .item{
   color: rgba(52, 85, 88, 0.822);
-    
+  border: 1px solid green;
+  padding: 5px;
+  border-radius: 35%;
   text-decoration: none;
+  font-weight: bold;
 }
   
 .active  {
   color: rgba(65, 158, 80, 0.835);
-
+  font-weight: bold;
   text-decoration: none;
 }
 

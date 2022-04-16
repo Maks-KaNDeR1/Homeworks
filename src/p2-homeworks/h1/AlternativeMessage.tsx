@@ -1,5 +1,5 @@
 import React, { ChangeEvent, KeyboardEvent, useState } from 'react'
-
+import s from './AlternativeMessage.module.css'
 
 type PropsType = {
     addMessage: (title: string) => void
@@ -30,24 +30,16 @@ function AlternativeMessage(props: PropsType) {
 
     return (
         
-        <div>
-            <input style={{
-                marginLeft: '30px',
-                backgroundColor: 'rgba(119, 140, 148, 0.452)'
-            }}
-                value={title} type='text'
+        <div className={s.items} >
+            <input value={title} type='text'
+            placeholder=' New message...'
                 onChange={hendleOnChange}
                 onKeyPress={onKeyPressHandler}
             />
-            <button
-            
-            style={{
-                borderRadius: '0px 55px 55px 0',
-                backgroundColor: 'rgba(79, 140, 148, 0.452)'
-            }}
-                onClick={onMessageClick}>Send</button>
+            <button onClick={onMessageClick}>Send</button>
         </div>
     )
 }
+
 
 export default AlternativeMessage
