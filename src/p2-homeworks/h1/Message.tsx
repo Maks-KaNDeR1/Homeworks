@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './Message.module.css'
 
-type MessagePropsType = {
+type PropsType = {
     id?: string
     avatar: string
     name: string
@@ -9,7 +9,7 @@ type MessagePropsType = {
     time: string
 }
 
-function Message(props: MessagePropsType) {
+function Message(props:  PropsType) {
     return (
         <div className={s.message}>
         <img src={props.avatar} alt={'avatar'} />
