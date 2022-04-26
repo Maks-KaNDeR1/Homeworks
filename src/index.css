@@ -1,6 +1,7 @@
 body {
-    background-image:url(https://img.freepik.com/free-photo/vintage-grunge-blue-concrete-texture-studio-wall-background-with-vignette_1258-28513.jpg?w=900&t=st=1650102299~exp=1650102899~hmac=67e731e0a15e3654c06bca7d2b2d9c49cef16918ec4c60c81be53fca32ef66fa)   ;
-    
+    /* background-image:url(https://img.freepik.com/free-photo/vintage-grunge-blue-concrete-texture-studio-wall-background-with-vignette_1258-28513.jpg?w=900&t=st=1650102299~exp=1650102899~hmac=67e731e0a15e3654c06bca7d2b2d9c49cef16918ec4c60c81be53fca32ef66fa)   ; */
+   background: #c7f0fd;
+
     /* color: navy; */
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

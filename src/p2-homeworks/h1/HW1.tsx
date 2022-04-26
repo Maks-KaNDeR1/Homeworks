@@ -94,21 +94,18 @@ function HW1() {
     const scroll = React.useRef(null)
 
 
-
-
     return (
         <div style={{ width: '800px'}} >
-            <hr />
+            {/* <hr /> */}
             {homeworks(1)}
             <div style={{ overflow: 'auto', height: '600px' }} >
                 {messageElements}
                 <div ref={scroll} ></div>
             </div>
-            <hr />
-            <div>
+            <div  style={{backgroundColor: '#93c3dd ', height: '3px'}} />
+            <div className={s.messageBlock} >
                 <AlternativeMessage scroll={scroll} addMessage={addMessage} />
             </div>
-            <hr />
         </div>
     )
 }

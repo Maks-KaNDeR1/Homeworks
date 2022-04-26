@@ -34,11 +34,11 @@ function Affairs(props: AffairsPropsType) {
 
 
     return (
-        <div className={s.difficulty}>
+        <div>
             <div style={{ minHeight: '220px'}} >
                 {mappedAffairs}
             </div>
-            <div className={s.difficultyButton}>
+            <div className={s.difficulty} >
                 <button onClick={setAll}> All</button>
                 <button onClick={setHigh}> High</button>
                 <button onClick={setMiddle}> Middle</button>

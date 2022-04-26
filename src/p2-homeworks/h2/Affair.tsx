@@ -1,6 +1,6 @@
 import React from 'react'
 import { AffairType } from './HW2'
-import s from './Affairs.module.css'
+import s from './Affair.module.css'
 
 
 type AffairPropsType = {
@@ -17,7 +17,7 @@ function Affair(props: AffairPropsType) {
         <div className={s.items}  >
             <span>{props.affair.name}</span>
             <span>{props.affair.priority}</span>
-            <button style={{ backgroundColor: 'rgba(148, 168, 35, 0.918)'}} onClick={deleteCallback}>X</button>
+            <button onClick={deleteCallback}>X</button>
         </div>
     )
 }

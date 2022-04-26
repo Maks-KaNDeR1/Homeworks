@@ -7,24 +7,18 @@ function Header() {
 
     return (
         <div className={s.items} >
-              <div className={s.item}>
-                <NavLink to='/dialog'
-                    className={({ isActive }) => (isActive ? s.active : s.item)}
-                > Dialog </NavLink>
+              <div>
+                <NavLink to='/dialog' > Dialog </NavLink>
             </div>
-            <div className={s.item}>
-                <NavLink to='/pre-junior'
-                    className={({ isActive }) => (isActive ? s.active : s.item)}
-                > PRE JUNIOR </NavLink>
+            <div>
+                <NavLink to='/pre-junior'  > PRE JUNIOR </NavLink>
             </div>
-            <div className={s.item}>
-                <NavLink to='/junior'
-                    className={({ isActive }) => (isActive ? s.active : s.item)}
-                > JUNIOR </NavLink>
+            <div >
+                <NavLink to='/junior' > JUNIOR </NavLink>
             </div>
-            <div className={s.item} >
+            <div>
                 <NavLink to='/junior-plus'
-                    className={({ isActive }) => (isActive ? s.active : s.item)}
+                    // className={({ isActive }) => (isActive ? s.active : s.item)}
                 > JUNIOR PLUS </NavLink>
             </div>
         </div>
