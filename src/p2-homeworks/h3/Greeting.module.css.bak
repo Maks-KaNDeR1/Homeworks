@@ -7,7 +7,7 @@
 .items input {
 	border: none;
   padding: 4px 5px;
-  margin: 10px 2px 10px 10px;
+  margin: 10px 0 10px 10px;
   border-radius: 8px 4px 4px 8px;
   background-image: linear-gradient(to right, #afe8df 0%, #8498db 51%, #9EEFE1 100%);
   background-size: 200% auto;

@@ -21,7 +21,7 @@ const Greeting: React.FC<GreetingPropsType> = (
     return (
         <div className={s.items} >
             <input value={name}
-			placeholder='New message...'
+			placeholder='New message'
                 onChange={setNameCallback}
                 className={inputClass}
                 onKeyDown={onEnter}

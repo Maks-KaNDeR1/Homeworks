@@ -24,7 +24,7 @@
   }
   
   .formRadio input:checked+span {
-     background-color: #7e457e;
+     background-color: #93c3dd;
     background-image:linear-gradient(45deg, #018cdb 0%, #8f909196 50%, #7483a5c8 100%);
    }
   

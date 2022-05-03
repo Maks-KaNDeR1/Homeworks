@@ -45,7 +45,7 @@
 .angleSent {
     width: 15px;
     height: 15px;
-    background: radial-gradient(circle at 100% 0, rgba(30, 42, 39, 0) 15px,  #5bb2d2  0);
+    background: radial-gradient(circle at 100% 0, rgba(30, 42, 39, 0) 15px, #5e9bc3  0);
 }
 
 .name {
@@ -87,5 +87,5 @@ word-wrap: break-word;
 	
     display: flex;
     justify-content: flex-end;
-    color: rgba(38, 35, 216, 0.822);
+    color: #5bb2d2;
 }
